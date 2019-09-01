@@ -1,7 +1,37 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", "Roboto", Arial, Helvetica, sans-serif;
 }
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ecf1f1;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 17pt;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #888;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.portfolio {
+  background-color: #f2f7f7;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  -webkit-box-shadow: 0px 0px 15px -8px #999;
+  -moz-box-shadow: 0px 0px 15px -8px #999;
+  box-shadow: 0px 0px 15px -8px #999;
+}
+
+.descargas {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
 footer {
+  background-color: #e7eceb !important;
   -webkit-box-shadow: 0 -10px 10px -6px #999;
   -moz-box-shadow: 0 -10px 10px -6px #999;
   box-shadow: 0 -10px 10px -6px #999;
@@ -12,10 +42,53 @@ main {
   padding-bottom: 2em;
 }
 
+p,
+ul,
+ol,
+dl,
+table {
+  margin-bottom: 2em;
+  box-sizing: inherit;
+  font: inherit;
+  vertical-align: baseline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  color: #666;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 2em;
+  letter-spacing: 0;
+  font-weight: 300;
+  color: #666;
+  line-height: 1.5em;
+}
+
+.card {
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+}
+.card:hover {
+  -webkit-box-shadow: 10px 10px 57px -20px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 10px 10px 57px -20px rgba(0, 0, 0, 0.58);
+  box-shadow: 10px 10px 57px -20px rgba(0, 0, 0, 0.58);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 .navbar {
   -webkit-box-shadow: 0 10px 10px -6px #999;
   -moz-box-shadow: 0 10px 10px -6px #999;
   box-shadow: 0 10px 10px -6px #999;
+  font-size: 12pt;
+  font-weight: 100;
+  line-height: 1.5em;
 }
 
 .dropdown-menu {
@@ -27,8 +100,19 @@ main {
 .dropdown-item:hover {
   background-color: #626d79 !important;
 }
+.imageGuada {
+  display: block;
+  width: 100%;
+  margin: 2em 0 2em 0 !important;
+}
 
-#textAreaContacto {
-  min-height: 15em;
-  max-height: 20em;
+#message {
+  resize: none;
+  min-height: 10em;
+  max-height: 15em;
+}
+#copyright {
+  font-size: 12pt;
+  font-weight: 100;
+  line-height: 1.5em;
 }
