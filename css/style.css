@@ -217,3 +217,17 @@ h2 {
   box-shadow: 10px 10px 57px -20px rgba(0, 0, 0, 0.58);
   transition: box-shadow 0.3s ease-in-out;
 }
+
+/*//////////////////////////////////////////////////////////////////
+[ Background ]*/
+.bg0 {
+  background-color: #fff;
+}
+
+/*---------------------------------------------*/
+.bg-g1 {
+  background: -webkit-linear-gradient(bottom, #f77062, #fe5196);
+  background: -o-linear-gradient(bottom, #f77062, #fe5196);
+  background: -moz-linear-gradient(bottom, #f77062, #fe5196);
+  background: linear-gradient(bottom, #f77062, #fe5196);
+}
