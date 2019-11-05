@@ -31,8 +31,15 @@ body {
 }
 img {
   display: block;
-  width: 100%;
+  border: none !important;
 }
+
+.imgUp {
+  display: block;
+  width: 100%;
+  border: none !important;
+}
+
 .portfolio {
   background-color: #f2f7f7;
   padding-top: 3em;
@@ -179,15 +186,30 @@ h2 {
   line-height: 1.5em;
   background-color: #54c1c4 !important;
 }
+.btn {
+  color: #ffffff !important;
+  background-color: #66ebf0;
+  border: none !important;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #b4fcff !important;
+}
 
 .dropdown-menu {
-  background-color: #343a40 !important;
+  background-color: #54c1c4 !important;
 }
+
 .dropdown-item {
-  -webkit-text-fill-color: aliceblue !important;
+  -webkit-text-fill-color: #ffffff !important;
+  color: #ffffff !important;
 }
 .dropdown-item:hover {
-  background-color: #626d79 !important;
+  background-color: #66ebf0 !important;
 }
 .imageGuada {
   display: block;
@@ -277,14 +299,7 @@ h2 {
   color: #666;
   margin-bottom: 30px;
 }
-.filter-button:hover {
-  font-size: 18px;
-  border: 1px solid #666;
-  border-radius: 5px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #666;
-}
+
 .btn-default:active .filter-button:active {
   background-color: #666;
   color: white;
