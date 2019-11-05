@@ -1,14 +1,29 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 * {
   font-family: "Source Sans Pro", "Roboto", Arial, Helvetica, sans-serif;
+  border: none;
+}
+
+a {
+  color: #ad8614;
+}
+
+a:hover {
+  color: #ad8614;
+  text-decoration: none;
+}
+.linkDecorated {
+  color: #666;
+  border-bottom: 1px dotted #666;
 }
 html {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #ecf1f1;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 17pt;
+  background-color: #ffffff;
+  font-size: 15pt;
   font-weight: 300;
   line-height: 1.5em;
   color: #888;
@@ -27,16 +42,79 @@ img {
   box-shadow: 0px 0px 15px -8px #999;
 }
 
+.about {
+  background-color: #ffffff;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  -webkit-box-shadow: 0px 0px 15px -8px #999;
+  -moz-box-shadow: 0px 0px 15px -8px #999;
+  box-shadow: 0px 0px 15px -8px #999;
+}
+
 .descargas {
   padding-top: 3em;
   padding-bottom: 3em;
 }
 
 footer {
-  background-color: #e7eceb !important;
-  -webkit-box-shadow: 0 -10px 10px -6px #999;
-  -moz-box-shadow: 0 -10px 10px -6px #999;
-  box-shadow: 0 -10px 10px -6px #999;
+  font-family: "Source Sans Pro", "Roboto", Arial, Helvetica, sans-serif !important;
+  background: rgba(146, 205, 221, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(146, 205, 221, 1) 0%,
+    rgba(84, 193, 196, 1) 53%,
+    rgba(74, 166, 191, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(146, 205, 221, 1)),
+    color-stop(53%, rgba(84, 193, 196, 1)),
+    color-stop(100%, rgba(74, 166, 191, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(146, 205, 221, 1) 0%,
+    rgba(84, 193, 196, 1) 53%,
+    rgba(74, 166, 191, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(146, 205, 221, 1) 0%,
+    rgba(84, 193, 196, 1) 53%,
+    rgba(74, 166, 191, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(146, 205, 221, 1) 0%,
+    rgba(84, 193, 196, 1) 53%,
+    rgba(74, 166, 191, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(146, 205, 221, 1) 0%,
+    rgba(84, 193, 196, 1) 53%,
+    rgba(74, 166, 191, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92cddd', endColorstr='#4aa6bf', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
+  -webkit-box-shadow: 0 -8px 8px -6px rgb(190, 190, 190);
+  -moz-box-shadow: 0 -8px 8px -6px rgb(190, 190, 190);
+  box-shadow: 0 -8px 8px -6px rgb(190, 190, 190);
+}
+
+#tittleFooter {
+  color: #ad8614;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  font-family: "Source Sans Pro", "Roboto", Arial, Helvetica, sans-serif !important;
+}
+.card-title {
+  color: #ad8614;
+}
+#logoFooter {
+  width: 4em;
 }
 
 main {
@@ -54,6 +132,13 @@ table {
   font: inherit;
   vertical-align: baseline;
 }
+
+.paragraph {
+  margin-bottom: 0.5em;
+  box-sizing: inherit;
+  font: inherit;
+  vertical-align: baseline;
+}
 h1,
 h2,
 h3,
@@ -63,13 +148,14 @@ h6 {
   font-weight: 300;
   color: #666;
   line-height: 1.5em;
+  color: #ad8614;
 }
 
 h2 {
   font-size: 2em;
   letter-spacing: 0;
   font-weight: 300;
-  color: #666;
+  color: #ad8614;
   line-height: 1.5em;
 }
 
@@ -91,6 +177,7 @@ h2 {
   font-size: 12pt;
   font-weight: 100;
   line-height: 1.5em;
+  background-color: #54c1c4 !important;
 }
 
 .dropdown-menu {
@@ -226,8 +313,8 @@ h2 {
 
 /*---------------------------------------------*/
 .bg-g1 {
-  background: -webkit-linear-gradient(bottom, #f77062, #fe5196);
-  background: -o-linear-gradient(bottom, #f77062, #fe5196);
-  background: -moz-linear-gradient(bottom, #f77062, #fe5196);
-  background: linear-gradient(bottom, #f77062, #fe5196);
+  background: -webkit-linear-gradient(bottom, #54c1c4, #c3f5fd);
+  background: -o-linear-gradient(bottom, #54c1c4, #c3f5fd);
+  background: -moz-linear-gradient(bottom, #54c1c4, #c3f5fd);
+  background: linear-gradient(bottom, #54c1c4, #c3f5fd);
 }
