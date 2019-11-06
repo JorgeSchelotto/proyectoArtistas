@@ -158,8 +158,21 @@ h6 {
   color: #ad8614 !important;
 }
 
+.dotText {
+  border-bottom: 1px dotted #9999cc;
+  text-decoration: none;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
 h2 {
-  font-size: 2em;
+  font-size: 1em;
   letter-spacing: 0;
   font-weight: 300;
   color: #ad8614;
