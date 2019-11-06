@@ -146,6 +146,7 @@ table {
   font: inherit;
   vertical-align: baseline;
 }
+
 h1,
 h2,
 h3,
@@ -153,9 +154,8 @@ h4,
 h5,
 h6 {
   font-weight: 300;
-  color: #666;
   line-height: 1.5em;
-  color: #ad8614;
+  color: #ad8614 !important;
 }
 
 h2 {
@@ -328,8 +328,8 @@ h2 {
 
 /*---------------------------------------------*/
 .bg-g1 {
-  background: -webkit-linear-gradient(bottom, #54c1c4, #c3f5fd);
-  background: -o-linear-gradient(bottom, #54c1c4, #c3f5fd);
-  background: -moz-linear-gradient(bottom, #54c1c4, #c3f5fd);
-  background: linear-gradient(bottom, #54c1c4, #c3f5fd);
+  background: -webkit-linear-gradient(bottom, #54c1c4, #a3f3ff);
+  background: -o-linear-gradient(bottom, #54c1c4, #a3f3ff);
+  background: -moz-linear-gradient(bottom, #54c1c4, #a3f3ff);
+  background: linear-gradient(bottom, #54c1c4, #a3f3ff);
 }
