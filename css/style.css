@@ -5,6 +5,14 @@
   border: none;
 }
 
+#tittle {
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1em;
+}
+
 a {
   color: #ad8614;
 }
@@ -345,4 +353,8 @@ h2 {
   background: -o-linear-gradient(bottom, #459b9e, #54c1c4);
   background: -moz-linear-gradient(bottom, #459b9e, #54c1c4);
   background: linear-gradient(bottom, #459b9e, #54c1c4);
+}
+
+.filter-button {
+  margin-bottom: 0.5em;
 }
