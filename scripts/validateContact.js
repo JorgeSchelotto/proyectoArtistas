@@ -1,3 +1,15 @@
+var infancias = document.getElementById("textoInfancias");
+var niño = document.getElementById("niño");
+var todas = document.getElementById("todas");
+infancias.setAttribute("hidden", true);
+niño.addEventListener("click", () => {
+  infancias.removeAttribute("hidden");
+});
+
+todas.addEventListener("click", () => {
+  infancias.setAttribute("hidden", true);
+});
+
 $(document).ready(function() {
   $("body").fadeIn(2000);
   $("img").fadeIn(2000);
