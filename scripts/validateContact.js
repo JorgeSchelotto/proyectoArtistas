@@ -78,23 +78,24 @@ function validateForm() {
   document.getElementById("contact-form").submit();
 }
 
-$(function() {
-  var selectedClass = "";
-  $(".filter").click(function() {
-    selectedClass = $(this).attr("data-rel");
-    $("#gallery").fadeTo(100, 0.1);
-    $("#gallery div")
-      .not("." + selectedClass)
-      .fadeOut()
-      .removeClass("animation");
-    setTimeout(function() {
-      $("." + selectedClass)
-        .fadeIn()
-        .addClass("animation");
-      $("#gallery").fadeTo(300, 1);
-    }, 300);
-  });
-});
+// $(function() {
+//   var selectedClass = "";
+//   $(".filter").click(function() {
+//     selectedClass = $(this).attr("data-rel");
+//     $("#gallery").fadeTo(100, 0.1);
+//     $("#gallery div")
+//       .not("." + selectedClass)
+//       .fadeOut()
+//       .removeClass("animation");
+//     setTimeout(function() {
+//       $("." + selectedClass)
+//         .fadeIn()
+//         .addClass("animation");
+//       $("#gallery").fadeTo(300, 1);
+//     }, 300);
+//   });
+// });
+
 filterSelection("all"); // Execute the function and show all columns
 function filterSelection(c) {
   var x, i;
@@ -133,40 +134,40 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-// var btnContainer = document.getElementById("myBtnContainer");
-var btns = document.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-$(window).load(function() {
-  var $container = $(".portfolioContainer");
-  $container.isotope({
-    filter: "*",
-    animationOptions: {
-      duration: 750,
-      easing: "linear",
-      queue: false
-    }
-  });
-
-  $(".portfolioFilter a").click(function() {
-    $(".portfolioFilter .current").removeClass("current");
-    $(this).addClass("current");
-
-    var selector = $(this).attr("data-filter");
-    $container.isotope({
-      filter: selector,
-      animationOptions: {
-        duration: 750,
-        easing: "linear",
-        queue: false
-      }
-    });
-    return false;
-  });
-});
+// // var btnContainer = document.getElementById("myBtnContainer");
+// var btns = document.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
+//
+// $(window).load(function() {
+//   var $container = $(".portfolioContainer");
+//   $container.isotope({
+//     filter: "*",
+//     animationOptions: {
+//       duration: 750,
+//       easing: "linear",
+//       queue: false
+//     }
+//   });
+//
+//   $(".portfolioFilter a").click(function() {
+//     $(".portfolioFilter .current").removeClass("current");
+//     $(this).addClass("current");
+//
+//     var selector = $(this).attr("data-filter");
+//     $container.isotope({
+//       filter: selector,
+//       animationOptions: {
+//         duration: 750,
+//         easing: "linear",
+//         queue: false
+//       }
+//     });
+//     return false;
+//   });
+// });
