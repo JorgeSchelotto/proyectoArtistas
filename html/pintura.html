@@ -1,482 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-	<!--<link rel="stylesheet"
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<!--<link rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">-->
-	<link rel="stylesheet" href="../css/style.css">
-	<!--Fontawesome kit Jorge Schelotto-->
-	<script src="https://kit.fontawesome.com/b9af2fb571.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
-	<title>Guadalupe Gárriz</title>
-	<link rel="shortcut icon" href="../assets/icons/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="../css/style.css">
+		<!--Fontawesome kit Jorge Schelotto-->
+		<script src="https://kit.fontawesome.com/b9af2fb571.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro&display=swap"
+			rel="stylesheet">
+		<title>Guadalupe Gárriz</title>
+		<link rel="shortcut icon" href="../assets/icons/favicon.png"
+			type="image/x-icon">
 
-</head>
+	</head>
 
-<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+	<body oncontextmenu="return false" onselectstart="return false"
+		ondragstart="return false">
 
-	<!--Header-->
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex
+		<!--Header-->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex
 				justify-content-center">
+				<div class="container">
+					<a class="navbar-brand" href="../index.html">
+						<img src="../assets/imagenes/navbar/avatar.png" alt="Logo"
+							style="width:30px;">
+					</a>
+
+					<a class="navbar-brand" href="../index.html"><b id="tittle"> Guada Gárriz
+						</b></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../acercaDe.html">Acerca de Guada</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+									role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Portfolio
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="pintura.html">Pintura</a>
+									<a class="dropdown-item" href="ilustracion.html">Ilustración</a>
+									<a class="dropdown-item" href="taller.html">Taller</a>
+									<!--- Ocultar --->
+									<!---<a class="dropdown-item" href="Exhibiciones.html">Exhibiciones</a>--->
+									<a class="dropdown-item" href="../academicos.html">Escritos academicos</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="para_llevar.html">Gárriz para Llevar</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../prensa.html">Prensa</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../declaracion.html">Declaración de artista</a>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0">
+							<button class="btn btn-outline-light my-2 my-sm-0" disabled
+								type="button">Tienda
+								<small>(Próximamente)</small></button>
+						</form>
+					</div>
+				</div>
+
+			</nav>
+
+		</header>
+
+
+		<!--Main-->
+		<main class="main text-center">
 			<div class="container">
-				<a class="navbar-brand" href="../index.html">
-					<img src="../assets/imagenes/navbar/avatar.png" alt="Logo" style="width:30px;">
-				</a>
+				<div class="row">
+					<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h1 class="gallery-title">Portfolio | Pintura</h1>
+					</div>
+					<div class="btn-group col d-flex justify-content-center
+						justify-content-sm-center flex-wrap"
+						role="group" id="buttonGroup">
+						<button id="todas" class="btn btn-primary filter-button p-2"
+							data-filter="all">Todas</button>
+						<button class="btn btn-primary filter-button p-2" data-filter="obras2019">Obras
+							sobre papel</button>
+						<button id="vidas" class="btn btn-primary filter-button p-2" data-filter="vidas">Vidas
+							de papel</button>
+						<button class="btn btn-primary filter-button p-2" data-filter="puntos">Guada
+							Gárriz y puntos</button>
+						<button id="niño" class="btn btn-primary filter-button p-2"
+							data-filter="habia">Había
+							una vez...un niño</button>
+						<button class="btn btn-primary filter-button p-2" data-filter="obras2012">Obras
+							formato
+							pequeño</button>
 
-				<a class="navbar-brand" href="../index.html"><b id="tittle"> Guada Gárriz </b></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
-					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../acercaDe.html">Acerca de Guada</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Portfolio
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="pintura.html">Pintura</a>
-								<a class="dropdown-item" href="ilustracion.html">Ilustración</a>
-								<a class="dropdown-item" href="taller.html">Taller</a>
-								<a class="dropdown-item" href="Exhibiciones.html">Exhibiciones</a>
-								<a class="dropdown-item" href="../academicos.html">Escritos academicos</a>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="para_llevar.html">Gárriz para Llevar</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../prensa.html">Prensa</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../declaracion.html">Declaración de artista</a>
-						</li>
-					</ul>
-					<form class="form-inline my-2 my-lg-0">
-						<button class="btn btn-outline-light my-2 my-sm-0" disabled type="button">Tienda
-							<small>(Próximamente)</small></button>
-					</form>
+					</div>
 				</div>
-			</div>
 
-		</nav>
+				<div class="row" id="gallery">
+					<br />
 
-	</header>
-
-
-	<!--Main-->
-	<main class="main text-center">
-		<div class="container">
-			<div class="row">
-				<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<h1 class="gallery-title">Portfolio | Pintura</h1>
-				</div>
-				<div class="btn-group col d-flex justify-content-center justify-content-sm-center flex-wrap"
-					role="group" id="buttonGroup">
-					<button id="todas" class="btn btn-primary filter-button p-2" data-filter="all">Todas</button>
-					<button class="btn btn-primary filter-button p-2" data-filter="obras2019">Obras
-						Sobre Papel</button>
-					<button class="btn btn-primary filter-button p-2" data-filter="vidas">Vidas
-						De Papel</button>
-					<button class="btn btn-primary filter-button p-2" data-filter="puntos">Guada
-						Gárriz y Puntos</button>
-					<button id="niño" class="btn btn-primary filter-button p-2" data-filter="habia">Había
-						una vez...un niño</button>
-					<button class="btn btn-primary filter-button p-2" data-filter="obras2012">Obras Formato Pequeño</button>
-
-				</div>
-			</div>
-
-			<div class="row" id="gallery">
-				<br />
-
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
 						obras2019">
-					<a href="../assets/imagenes/pintura/fulls/obras2019/obras-2019-a.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/port-obra-mini.jpg" class="img-responsive imgUp"
-							title="">
-					</a>
-				</div>
+						<a href="../assets/imagenes/pintura/fulls/obras2019/obras-2019-a.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/port-obra-mini.jpg"
+								class="img-responsive imgUp"
+								title="">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
 						obras2019">
-					<a href="../assets/imagenes/pintura/fulls/obras2019/obras-2019-b.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/obra-mini-b.jpg" class="img-responsive imgUp"
-							title="">
-					</a>
-				</div>
+						<a href="../assets/imagenes/pintura/fulls/obras2019/obras-2019-b.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/obra-mini-b.jpg"
+								class="img-responsive imgUp"
+								title="">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
 						obras2019">
-					<a href="../assets/imagenes/pintura/fulls/obras2019/obras-2019-c.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/obra-mini-c.jpg" class="img-responsive imgUp"
-							title="">
-					</a>
-				</div>
+						<a href="../assets/imagenes/pintura/fulls/obras2019/obras-2019-c.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/obra-mini-c.jpg"
+								class="img-responsive imgUp"
+								title="">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<img src="../assets/imagenes/pintura/thumbs/vida-extracto.jpg" class="img-responsive imgUp" alt
-						title="Abrir Texto Curatorial"
-						onclick="window.open('../assets/imagenes/pintura/vidas-de-papel.pdf','','')">
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<img src="../assets/imagenes/pintura/thumbs/vida-extracto.jpg"
+							class="img-responsive imgUp" alt
+							title="Abrir Texto Curatorial"
+							onclick="window.open('../assets/imagenes/pintura/vidas-de-papel.pdf','','')">
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-a.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-a.jpg" class="img-responsive imgUp"
-							title="Los monstruos que me rodean - Acrílico y lápiz sobre MDF, 110 cm x 130 cm">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-a.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-a.jpg"
+								class="img-responsive imgUp"
+								title="Los monstruos que me rodean - Acrílico y lápiz sobre MDF, 110 cm
+								x 130 cm">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-b.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-b.jpg" class="img-responsive imgUp"
-							title="Dar Batalla - Acrílico sobre tela, 100 cm x 100 cm">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-b.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-b.jpg"
+								class="img-responsive imgUp"
+								title="Dar Batalla - Acrílico sobre tela, 100 cm x 100 cm">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-c.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-c.jpg" class="img-responsive imgUp"
-							title="Mar">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-c.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-c.jpg"
+								class="img-responsive imgUp"
+								title="Mar">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-d.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-d.jpg" class="img-responsive imgUp"
-							title="">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-d.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-d.jpg"
+								class="img-responsive imgUp"
+								title="">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-e.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-e.jpg" class="img-responsive imgUp"
-							title="Los padres son los huesos donde se afilan los dientes los hijos - Acrílico sobre mdf,150 x 150 2016 mixta s tela.jpg">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-e.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-e.jpg"
+								class="img-responsive imgUp"
+								title="Los padres son los huesos donde se afilan los dientes los hijos -
+								Acrílico sobre mdf,150 x 150 2016 mixta s tela.jpg">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-f.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-f.jpg" class="img-responsive imgUp"
-							title="Cuidar la tierra">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-f.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-f.jpg"
+								class="img-responsive imgUp"
+								title="Cuidar la tierra">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-g.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-g.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-g.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-g.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-h.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-h.jpg" class="img-responsive imgUp"
-							title="Vidas de papel - Acrílico sobre mdf, 130 cm x 110 cm">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-h.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-h.jpg"
+								class="img-responsive imgUp"
+								title="Vidas de papel - Acrílico sobre mdf, 130 cm x 110 cm">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-i.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-i.jpg" class="img-responsive imgUp"
-							title="Tiempo para ser">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-i.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-i.jpg"
+								class="img-responsive imgUp"
+								title="Tiempo para ser">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-j.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-j.jpg" class="img-responsive imgUp"
-							title="Completa">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-j.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-j.jpg"
+								class="img-responsive imgUp"
+								title="Completa">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-k.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-k.jpg" class="img-responsive imgUp"
-							title="Lo que pasa mientras dormimos">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-k.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-k.jpg"
+								class="img-responsive imgUp"
+								title="Lo que pasa mientras dormimos">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-l.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-l.jpg" class="img-responsive imgUp"
-							title="Bestia neoliberal - Acrílico sobre mdf, 100 cm x 120 cm">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-l.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-l.jpg"
+								class="img-responsive imgUp"
+								title="Bestia neoliberal - Acrílico sobre mdf, 100 cm x 120 cm">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-m.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-m.jpg" class="img-responsive imgUp"
-							title="Lo que no podemos traducir a palabras - Acrílico sobre mdf, 110 cm x 140 cm">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-m.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-m.jpg"
+								class="img-responsive imgUp"
+								title="Lo que no podemos traducir a palabras - Acrílico sobre mdf, 110
+								cm x 140 cm">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-n.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-n.jpg" class="img-responsive imgUp"
-							title="30000 - Acrílico sobre mdf, 130 cm x 110 cm">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-n.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-n.jpg"
+								class="img-responsive imgUp"
+								title="30000 - Acrílico sobre mdf, 130 cm x 110 cm">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-o.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-o.jpg" class="img-responsive imgUp"
-							title="Azul es el cielo de los ciegos - Acrílico sobre mdf, 130 cm x 180 cm">
-					</a>
-				</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-o.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-o.jpg"
+								class="img-responsive imgUp"
+								title="Azul es el cielo de los ciegos - Acrílico sobre mdf, 130 cm x 180
+								cm">
+						</a>
+					</div>
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					vidas">
-					<a href="../assets/imagenes/pintura/fulls/vidas/vida-p.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/vida-mini-p.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					puntos">
-					<a href="../assets/imagenes/pintura/fulls/puntos/puntos-a.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/puntos-mini-a.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-
-
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					puntos">
-					<a href="../assets/imagenes/pintura/fulls/puntos/puntos-b.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/puntos-mini-b.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					puntos">
-					<a href="../assets/imagenes/pintura/fulls/puntos/puntos-c.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/puntos-mini-c.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					puntos">
-					<a href="../assets/imagenes/pintura/fulls/puntos/puntos-d.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/puntos-mini-d.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-
-				<div id="textoInfancias" class="gallery_product col-12 filter habia">
-					<div class="row bg-light">
-						<div class="d-flex p-2 justify-content-between flex-wrap">
-							<div class="text-left p-2">
-								<p id="acercaDe">“Es que el mundo de la infancia es también nuestro mundo, la niñez que
-									fue pero que aún portamos, la drástica visión de las cosas en que nuestro estadío de
-									indefensión aún perdura ante el gesto menos pensado del universo que nos circunda.
-									Nada es solamente infantil o meramente adulto. A la vuelta de la esquina se esconde
-									aquel evento que nos hace sentir niños o que adultamente no podemos resolver, no
-									queremos, o desearíamos que nos solucionaran. No hay relación de exclusión entre la
-									pretendida complejidad resolutiva e intelectual del mayor y la fragilidad de quienes
-									nunca dejaremos de depender interiormente de las figuras que nos cuidaron o
-									descuidaron. </p>
-								<p id="acercaDe">
-									Una calesita vacía o destruida por el paso del tiempo, viejos pupitres mudos de
-									escuela, la prepotencia de algún maestro descarriado, una piñata injusta que nos
-									dejó sin caramelos y retorna en forma de inequidad social, pelotazos en la cara,
-									muñecas anheladas por siempre que signaron la forma del deseo, autitos detrás de
-									vitrinas, frases sueltas dichas por señores con bigote, imágenes difusas, recuerdos
-									truncos, son formas de lo que siendo antiguo perdurará por siempre”.
-
-								</p>
-								<p id="acercaDe">
-									Joaquín Areta
-								</p>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						vidas">
+						<a href="../assets/imagenes/pintura/fulls/vidas/vida-p.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/vida-mini-p.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
 
 
+
+
+					<div id="textoVidas" class="gallery_product col-12 filter filter vidas">
+						<div class="row bg-light">
+							<div class="d-flex p-2 justify-content-between flex-wrap">
+								<div  class="text-left p-2">
+									<p class="text-left"><strong>Vidas de papel</strong></p>
+									<p class="text-right">Por Gabriela A. Victoria W.</p>
+									<p id="acercaDe">La obra de Gárriz nos otorga una certeza: si avanzamos
+										en el recorrido que nos ofrece, llegaremos
+										a ella misma. Su punto de partida es la confianza en su intuición, que
+										le otorga espacio a su
+										manera de abordar una realidad, a la cual no le bastan la imagen, la
+										palabra, los agujeros reales ni
+										simbólicos. Aún siendo pregnantes, éstos sólo funcionan como recursos.
+										En verdad, su obra
+										trasunta la pregunta por el Ser. </p>
+									<h6 class="text-right leerMas">Leer más</h6>
+									<div class="leer">
+										<p id="acercaDe">
+											Garriz crea honestamente a partir de su resonar sensible con aquello
+											que se configura como una
+											frontera posible de derrumbe subjetivo: la vulnerabilidad. Lo
+											vulnerable es su materialidad diaria.
+											Aquello equidistante en su posibilidad de ser, o bien, de dejar de
+											existir. En su apuesta humana a
+											la permanencia, Gárriz nos exhibe un andamiaje de recursos entre los
+											cuales se encuentran
+											agujeros equidistantes, dispersos y la palabra comprensible, nunca
+											subordinada. Palabra que
+											hilvana sentidos poéticos de construcción de memoria, acordes con la
+											concepción del arte como
+											campo de acción transformadora. Arte que constituye el registro
+											sensible de esa transformación.
+
+										</p>
+										<p id="acercaDe">
+											Por eso sus cuadros no son objetos de veneración o de culto sino
+											instancias de revelación, recortes
+											temporales en su trabajo de indagación acerca de la condición humana.
+											Sucede entonces aquello
+											que resulta de ofrecer nuestro corazón al mundo.
+										</p>
+
+										<p id="acercaDe">
+											Garriz también recoge del contexto la alegría y el humor. Las
+											transparencias del material
+											descubren al aire que disfruta del color y la textura. Produce vacío
+											en el propio soporte; utiliza
+											texturas infinitas y puntos que crecen sobre otros puntos: nos otorga
+											en cada una de sus acciones,
+											el tiempo. De tanto en tanto, interrumpe la contemplación, no permite
+											el letargo: moviliza en el
+											mismo modo en que moviliza lo Real. Elige las palabras que dan cuerpo
+											al concepto, la
+											materialidad.
+										</p>
+
+										<p id="acercaDe">
+											El lado oculto es la contracara de la poesía: es el trabajo diario en
+											instituciones donde los seres
+											humanos transitan invisibilizados, es la artista construyendo
+											dispositivos subjetivantes allí donde
+											la burocracia invalidó la subjetivación; provocó alienación, el
+											borramiento de toda alteridad. Por
+											eso, al desandar la trama de los sentidos éstos son los mismos; pero
+											lo que aquí nos convoca
+											pertenece al territorio del arte. Lo que cambia, es el tiempo. Hoy es
+											el tiempo de la artista.
+										</p>
+
+										<p id="acercaDe">
+											Sin pretensión de Bondad, ni de Verdad, pero exhibiendo nada menos
+											que la certeza de existir a
+											partir de un trabajo develador, la pregunta por el Ser declara un
+											tiempo de dar batalla. Acudimos
+											irremediablemente a ese futuro, promete la artista. Nos ofrece, a
+											cambio el arma reveladora de su
+											arte. Hasta aquí, hasta hoy. En este tiempo.
+										</p>
+
+										<p id="acercaDe">
+											Garriz no posee pretensiones de controlar el mundo sino la condición
+											de ser capaz de abordarlo
+											allí donde le exhiban un escenario de derrumbe cierto, construyendo a
+											partir aquellas que son sus
+											armas: el campo del arte, un espacio que se declara con la vehemencia
+											en un tiempo incierto. La
+											artista interviene su realidad allí donde sucede lo auténtico y la
+											poesía acontece.
+										</p>
+
+										<p id="acercaDe">
+											La obra de Garriz mantiene una relación incondicional con su calle,
+											con sus Otros, con sus
+											circunstancias. Su poética supone un posicionamiento que asevera que,
+											no sólo el arte, sino todo
+											acto de ternura es político. La batalla a dar es nada menos que la
+											batalla por la vida, por los huesos
+											de los padres, por generar las condiciones de posibilidad de un
+											futuro para los hijos nuestros, para
+											todos los hijos, para aquello que consideramos vulnerable.
+										</p>
+										<h6 class="text-right mostrarMenos">Mostrar menos</h6>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					habia">
-					<a href="../assets/imagenes/pintura/fulls/habia/habia-a.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/habia-mini-a.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					habia">
-					<a href="../assets/imagenes/pintura/fulls/habia/habia-b.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/habia-mini-b.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					habia">
-					<a href="../assets/imagenes/pintura/fulls/habia/habia-c.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/habia-mini-c.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					habia">
-					<a href="../assets/imagenes/pintura/fulls/habia/habia-d.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/habia-mini-d.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					habia">
-					<a href="../assets/imagenes/pintura/fulls/habia/habia-e.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/habia-mini-e.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					habia">
-					<a href="../assets/imagenes/pintura/fulls/habia/habia-f.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/habia-mini-f.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-
-
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatog/formatog-a.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatog-mini-a.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatog/formatog-b.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatog-mini-b.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatog/formatog-c.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatog-mini-c.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatog/formatog-d.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatog-mini-d.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatog/formatog-f.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatog-mini-f.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
 
 
 
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatop/formatop-a.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatop-mini-a.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatop/formatop-b.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatop-mini-b.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatop/formatop-c.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatop-mini-c.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatop/formatop-d.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatop-mini-d.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatop/formatop-f.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatop-mini-f.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatop/formatop-g.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatop-mini-g.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatop/formatop-h.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatop-mini-h.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatop/formatop-i.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatop-mini-i.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatop/formatop-j.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatop-mini-j.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatop/formatop-k.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatop-mini-k.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatop/formatop-l.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatop-mini-l.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
-				<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-					obras2012">
-					<a href="../assets/imagenes/pintura/fulls/formatop/formatop-m.jpg">
-						<img src="../assets/imagenes/pintura/thumbs/formatop-mini-m.jpg" class="img-responsive imgUp">
-					</a>
-				</div>
 
 
-			</div>
-			<div class="row bg-light">
-				<div class="d-flex p-2 justify-content-between flex-wrap">
-					<div class="col-md-12 col-sm-12 text-left p-2">
-						<p>Las obras reproducidas en esta página se encuentran protegidas por la Ley 11.723, Régimen
-							Legal de la Propiedad Intelectual de la República Argentina. Por lo tanto, su uso se
-							encuentra restringido a aquello que la autora de las mismas determine y no pueden ser
-							reproducidas sin su consentimiento.. </p>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						puntos">
+						<a href="../assets/imagenes/pintura/fulls/puntos/puntos-a.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/puntos-mini-a.jpg"
+								class="img-responsive imgUp">
+						</a>
 					</div>
+
+
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						puntos">
+						<a href="../assets/imagenes/pintura/fulls/puntos/puntos-b.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/puntos-mini-b.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						puntos">
+						<a href="../assets/imagenes/pintura/fulls/puntos/puntos-c.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/puntos-mini-c.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						puntos">
+						<a href="../assets/imagenes/pintura/fulls/puntos/puntos-d.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/puntos-mini-d.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+
+
+
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						habia">
+						<a href="../assets/imagenes/pintura/fulls/habia/habia-a.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/habia-mini-a.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						habia">
+						<a href="../assets/imagenes/pintura/fulls/habia/habia-b.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/habia-mini-b.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						habia">
+						<a href="../assets/imagenes/pintura/fulls/habia/habia-c.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/habia-mini-c.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						habia">
+						<a href="../assets/imagenes/pintura/fulls/habia/habia-d.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/habia-mini-d.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						habia">
+						<a href="../assets/imagenes/pintura/fulls/habia/habia-e.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/habia-mini-e.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						habia">
+						<a href="../assets/imagenes/pintura/fulls/habia/habia-f.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/habia-mini-f.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+
+
+					<div id="textoInfancias" class="gallery_product col-12 filter habia">
+						<div class="row bg-light">
+							<div class="d-flex p-2 justify-content-between flex-wrap">
+								<div class="text-left p-2">
+									<p id="acercaDe">“Es que el mundo de la infancia es también nuestro
+										mundo, la niñez que
+										fue pero que aún portamos, la drástica visión de las cosas en que
+										nuestro estadío de
+										indefensión aún perdura ante el gesto menos pensado del universo que
+										nos circunda.
+										Nada es solamente infantil o meramente adulto. A la vuelta de la
+										esquina se esconde
+										aquel evento que nos hace sentir niños o que adultamente no podemos
+										resolver, no
+										queremos, o desearíamos que nos solucionaran. No hay relación de
+										exclusión entre la
+										pretendida complejidad resolutiva e intelectual del mayor y la
+										fragilidad de quienes
+										nunca dejaremos de depender interiormente de las figuras que nos
+										cuidaron o
+										descuidaron. </p>
+									<h6 class="text-right leerMas">Leer Más</h6>
+									<div class="leer">
+										<p id="acercaDe">
+											Una calesita vacía o destruida por el paso del tiempo, viejos
+											pupitres mudos de
+											escuela, la prepotencia de algún maestro descarriado, una piñata
+											injusta que nos
+											dejó sin caramelos y retorna en forma de inequidad social, pelotazos
+											en la cara,
+											muñecas anheladas por siempre que signaron la forma del deseo,
+											autitos detrás de
+											vitrinas, frases sueltas dichas por señores con bigote, imágenes
+											difusas, recuerdos
+											truncos, son formas de lo que siendo antiguo perdurará por siempre”.
+										</p>
+										<p id="acercaDe">
+											Joaquín Areta
+										</p>
+										<h6 class="text-right mostrarMenos">Mostrar menos</h6>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatog/formatog-a.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatog-mini-a.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatog/formatog-b.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatog-mini-b.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatog/formatog-c.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatog-mini-c.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatog/formatog-d.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatog-mini-d.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatog/formatog-f.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatog-mini-f.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+
+
+
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatop/formatop-a.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatop-mini-a.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatop/formatop-b.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatop-mini-b.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatop/formatop-c.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatop-mini-c.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatop/formatop-d.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatop-mini-d.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatop/formatop-f.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatop-mini-f.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatop/formatop-g.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatop-mini-g.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatop/formatop-h.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatop-mini-h.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatop/formatop-i.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatop-mini-i.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatop/formatop-j.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatop-mini-j.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatop/formatop-k.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatop-mini-k.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatop/formatop-l.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatop-mini-l.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
+						obras2012">
+						<a href="../assets/imagenes/pintura/fulls/formatop/formatop-m.jpg">
+							<img src="../assets/imagenes/pintura/thumbs/formatop-mini-m.jpg"
+								class="img-responsive imgUp">
+						</a>
+					</div>
+
+
 				</div>
+
 			</div>
-		</div>
 		</section>
 
 
@@ -484,7 +676,6 @@
 
 	<!-- Footer -->
 	<footer class="page-footer font-small text-muted bg-g1 pt-4" id="textFooter">
-
 		<!-- Footer Links -->
 		<div class="container text-center text-md-left">
 
@@ -498,33 +689,39 @@
 						<div class="col-md-12 mx-auto">
 
 							<h5 class="text-center" id="tittleFooter">Contacto</h5>
-							<p class="text-center" id="textFooter">Te invitamos a ponerte en contacto con Guada</p>
+							<p class="text-center" id="textFooter">Te invitamos a ponerte en contacto
+								con Guada</p>
 						</div>
 					</div>
 					<!-- Contact Form-->
-					<form id="contact-form" name="contact-form" action="https://formspree.io/jasfotografo@hotmail.com"
+					<form id="contact-form" name="contact-form"
+						action="https://formspree.io/jasfotografo@hotmail.com"
 						method="POST">
 						<div class="form-row">
 							<div class="form-group col-md-6 col-12-mobile">
 								<label for="nombre">Nombres</label>
-								<input type="text" class="form-control" id="name" name="name" placeholder="Nombres"
+								<input type="text" class="form-control" id="name" name="name"
+									placeholder="Nombres"
 									required>
 							</div>
 							<div class="form-group col-md-6 col-12-mobile">
 								<label for="email">Email</label>
-								<input type="text" class="form-control" id="email" name="email" placeholder="Email"
+								<input type="text" class="form-control" id="email" name="email"
+									placeholder="Email"
 									required>
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group col-12">
 								<label for="mensaje">Mensaje</label>
-								<textarea type="text" id="message" name="message" rows="10" class="form-control"
+								<textarea type="text" id="message" name="message" rows="10"
+									class="form-control"
 									placeholder="" required></textarea>
 							</div>
 						</div>
 						<div class="form-row d-flex justify-content-center">
-							<button type="submit" id="btn" class="btn btn-primary btn-lg align-middle"
+							<button type="submit" id="btn" class="btn btn-primary btn-lg
+								align-middle"
 								onclick="validateForm()">Enviar</button>
 						</div>
 						<div id="status" class="text-center"></div>
@@ -555,7 +752,8 @@
 			<!-- Social buttons -->
 			<ul class="list-unstyled list-inline text-center">
 				<li class="list-inline-item">
-					<a href="https://www.facebook.com/Guadagarriz.artistavisual" class="btn-floating btn-fb mx-1">
+					<a href="https://www.facebook.com/Guadagarriz.artistavisual"
+						class="btn-floating btn-fb mx-1">
 						<i class="fab fa-facebook-f"> </i>
 					</a>
 				</li>
@@ -566,7 +764,8 @@
 				</li>
 
 				<li class="list-inline-item">
-					<a href="https://www.instagram.com/guadagarriz.arte/" class="btn-floating btn-li mx-1">
+					<a href="https://www.instagram.com/guadagarriz.arte/" class="btn-floating
+						btn-li mx-1">
 						<i class="fab fa-instagram"> </i>
 					</a>
 				</li>
@@ -580,13 +779,34 @@
 			<!-- Social buttons -->
 
 			<!-- Copyright -->
-			<div class="d-flex align-items-center flex-column align-content-center flex-wrap">
+			<div class="d-flex align-items-center flex-column align-content-center
+				flex-wrap">
 				<div class="p-2" id="logoFooter">
-					<img class="img-fluid" src="../assets/imagenes/index/footer-logo.png" alt="">
+					<img class="img-fluid" src="../assets/imagenes/index/footer-logo.png"
+						alt="">
 				</div>
-				<div id="copyright" class="footer-copyright text-center py-3 p-2"> &copy; 2019
-					
+				<div id="copyright" class="footer-copyright text-center py-3 p-2"> &copy;
+					2019
+
 					<a class="text-muted" href=""> Guadalupe Gárriz</a>
+
+
+					<small>
+						<div class="d-flex p-2 justify-content-between flex-wrap">
+							<div class="col-md-12 col-sm-12 text-left p-2">
+								<p class="text-center">Las obras reproducidas en esta página se
+									encuentran protegidas
+									por la Ley 11.723, Régimen
+									Legal de la Propiedad Intelectual de la República Argentina. Por lo
+									tanto, su uso se
+									encuentra restringido a aquello que la autora de las mismas determine y
+									no pueden
+									ser
+									reproducidas sin su consentimiento.. </p>
+							</div>
+						</div>
+					</small>
+
 				</div>
 				<!-- Copyright -->
 				<br>
@@ -594,21 +814,24 @@
 				<br>
 			</div>
 
-	</footer>
+		</footer>
 
 
 
-	<!--Scripts-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.12.4.js"
-		integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+		<!--Scripts-->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"
+			integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="crossorigin="anonymous"></script>
 		<script src="../scripts/ocultaTexto.js"></script>
 		<script src="../scripts/validateContact.js"></script>
 		<script src="../scripts/jquery.poptrox.min.js"></script>
-	
 
-</body>
+
+	</body>
 
 </html>
