@@ -27,22 +27,19 @@
 		<!--Header-->
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex
-				justify-content-center">
+					justify-content-center">
 				<div class="container">
-					<a class="navbar-brand" href="../index.html">
-						<img src="../assets/imagenes/navbar/avatar.png" alt="Logo"
-							style="width:30px;">
-					</a>
-
-					<a class="navbar-brand" href="../index.html"><b id="tittle"> Guada Gárriz
-						</b></a>
+						<a class="navbar-brand" href="../index.html">
+							<img src="../assets/imagenes/navbar/avatar.png" alt="Logo" style="width:30px;">
+						  </a>
+	
+					<a class="navbar-brand" href="../index.html"><b id="tittle"> Guada Gárriz </b></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
-						data-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent" aria-expanded="false"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 						aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-
+	
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item active">
@@ -52,8 +49,7 @@
 								<a class="nav-link" href="../acercaDe.html">Acerca de Guada</a>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-									role="button"
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Portfolio
 								</a>
@@ -61,8 +57,7 @@
 									<a class="dropdown-item" href="pintura.html">Pintura</a>
 									<a class="dropdown-item" href="ilustracion.html">Ilustración</a>
 									<a class="dropdown-item" href="taller.html">Taller</a>
-									<!--- Ocultar --->
-									<!---<a class="dropdown-item" href="Exhibiciones.html">Exhibiciones</a>--->
+									<!---<a class="dropdown-item" href="html/Exhibiciones.html">Exhibiciones</a>--->
 									<a class="dropdown-item" href="../academicos.html">Escritos academicos</a>
 								</div>
 							</li>
@@ -77,15 +72,14 @@
 							</li>
 						</ul>
 						<form class="form-inline my-2 my-lg-0">
-							<button class="btn btn-outline-light my-2 my-sm-0" disabled
-								type="button">Tienda
-								<small>(Próximamente)</small></button>
+							<a class="callToAction" disabled>Tienda
+								<small>(Próximamente)</small></a>
 						</form>
 					</div>
 				</div>
-
+	
 			</nav>
-
+	
 		</header>
 
 
@@ -147,13 +141,6 @@
 						</a>
 					</div>
 
-					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
-						vidas">
-						<img src="../assets/imagenes/pintura/thumbs/vida-extracto.jpg"
-							class="img-responsive imgUp" alt
-							title="Abrir Texto Curatorial"
-							onclick="window.open('../assets/imagenes/pintura/vidas-de-papel.pdf','','')">
-					</div>
 
 					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
 						vidas">
@@ -164,6 +151,7 @@
 								x 130 cm">
 						</a>
 					</div>
+
 
 					<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter
 						vidas">
@@ -309,7 +297,7 @@
 							<div class="d-flex p-2 justify-content-between flex-wrap">
 								<div  class="text-left p-2">
 									<p class="text-left"><strong>Vidas de papel</strong></p>
-									<p class="text-right">Por Gabriela A. Victoria W.</p>
+									
 									<p id="acercaDe">La obra de Gárriz nos otorga una certeza: si avanzamos
 										en el recorrido que nos ofrece, llegaremos
 										a ella misma. Su punto de partida es la confianza en su intuición, que
@@ -405,6 +393,7 @@
 											futuro para los hijos nuestros, para
 											todos los hijos, para aquello que consideramos vulnerable.
 										</p>
+										<p class="text-right">Por Gabriela A. Victoria W.</p>
 										<h6 class="text-right mostrarMenos">Mostrar menos</h6>
 									</div>
 								</div>
@@ -676,6 +665,7 @@
 
 	<!-- Footer -->
 	<footer class="page-footer font-small text-muted bg-g1 pt-4" id="textFooter">
+
 		<!-- Footer Links -->
 		<div class="container text-center text-md-left">
 
@@ -689,39 +679,30 @@
 						<div class="col-md-12 mx-auto">
 
 							<h5 class="text-center" id="tittleFooter">Contacto</h5>
-							<p class="text-center" id="textFooter">Te invitamos a ponerte en contacto
-								con Guada</p>
+							<p class="text-center" id="textFooter">Te invitamos a ponerte en contacto con Guada</p>
 						</div>
 					</div>
 					<!-- Contact Form-->
-					<form id="contact-form" name="contact-form"
-						action="https://formspree.io/jasfotografo@hotmail.com"
-						method="POST">
+					<form id="contact-form" name="contact-form" action="https://formspree.io/jasfotografo@hotmail.com" method="POST">
 						<div class="form-row">
 							<div class="form-group col-md-6 col-12-mobile">
 								<label for="nombre">Nombres</label>
-								<input type="text" class="form-control" id="name" name="name"
-									placeholder="Nombres"
-									required>
+								<input type="text" class="form-control" id="name" name="name" placeholder="Nombres" required>
 							</div>
 							<div class="form-group col-md-6 col-12-mobile">
 								<label for="email">Email</label>
-								<input type="text" class="form-control" id="email" name="email"
-									placeholder="Email"
-									required>
+								<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group col-12">
 								<label for="mensaje">Mensaje</label>
-								<textarea type="text" id="message" name="message" rows="10"
-									class="form-control"
+								<textarea type="text" id="message" name="message" rows="10" class="form-control"
 									placeholder="" required></textarea>
 							</div>
 						</div>
 						<div class="form-row d-flex justify-content-center">
-							<button type="submit" id="btn" class="btn btn-primary btn-lg
-								align-middle"
+							<button type="submit" class="btn btn-primary btn-lg align-middle"
 								onclick="validateForm()">Enviar</button>
 						</div>
 						<div id="status" class="text-center"></div>
@@ -745,76 +726,67 @@
 					<small>Próximamente</small>
 				</li>
 			</ul>
-			<!-- Call to action -->
+		   <!-- Call to action -->
+		<ul class="list-unstyled list-inline text-center py-2">
+			<li class="list-inline-item">
+				<p class="callToAction"> <small> Tienda </small> </p>
+			</li>
+			<li class="list-inline-item">
+				<h6 href="#!" class="my-2 my-sm-0 disabled" placeholder="Tienda en desarrollo">Sign up!</h6>
+			</li>
+			<li> 
+				<p class="callToAction"> <small> Próximamente </small> </p>
+			</li>
+		</ul>
+		<!-- Call to action -->
 
-			<hr>
+		<hr>
 
-			<!-- Social buttons -->
-			<ul class="list-unstyled list-inline text-center">
-				<li class="list-inline-item">
-					<a href="https://www.facebook.com/Guadagarriz.artistavisual"
-						class="btn-floating btn-fb mx-1">
-						<i class="fab fa-facebook-f"> </i>
-					</a>
-				</li>
-				<li class="list-inline-item">
-					<a href="https://twitter.com/GuadaGarriz" class="btn-floating btn-tw mx-1">
-						<i class="fab fa-twitter"> </i>
-					</a>
-				</li>
+		<!-- Social buttons -->
+		<ul class="list-unstyled list-inline text-center">
+			<li class="list-inline-item">
+				<a href="https://www.facebook.com/Guadagarriz.artistavisual" class="btn-floating btn-fb mx-1">
+					<i class="fab fa-facebook-f"> </i>
+				</a>
+			</li>
+			<li class="list-inline-item">
+				<a href="https://twitter.com/GuadaGarriz" class="btn-floating btn-tw mx-1">
+					<i class="fab fa-twitter"> </i>
+				</a>
+			</li>
 
-				<li class="list-inline-item">
-					<a href="https://www.instagram.com/guadagarriz.arte/" class="btn-floating
-						btn-li mx-1">
-						<i class="fab fa-instagram"> </i>
-					</a>
-				</li>
-				<li class="list-inline-item">
-					<a href="https://www.linkedin.com/in/guadalupe-g%C3%A1rriz-arte/"
-						class="btn-floating btn-dribbble mx-1">
-						<i class="fab fa-linkedin"> </i>
-					</a>
-				</li>
-			</ul>
-			<!-- Social buttons -->
+			<li class="list-inline-item">
+				<a href="https://www.instagram.com/guadagarriz.arte/" class="btn-floating btn-li mx-1">
+					<i class="fab fa-instagram"> </i>
+				</a>
+			</li>
+			<li class="list-inline-item">
+				<a href="https://www.linkedin.com/in/guadalupe-g%C3%A1rriz-arte/" class="btn-floating btn-dribbble mx-1">
+					<i class="fab fa-linkedin"> </i>
+				</a>
+			</li>
+		</ul>
+		<!-- Social buttons -->
 
-			<!-- Copyright -->
-			<div class="d-flex align-items-center flex-column align-content-center
-				flex-wrap">
-				<div class="p-2" id="logoFooter">
-					<img class="img-fluid" src="../assets/imagenes/index/footer-logo.png"
-						alt="">
-				</div>
-				<div id="copyright" class="footer-copyright text-center py-3 p-2"> &copy;
-					2019
+		<!-- Copyright -->
+		<div class="d-flex align-items-center flex-column align-content-center flex-wrap">
+		<div class="p-2" id="logoFooter">
+			<img class="img-fluid" src="assets/imagenes/index/footer-logo.png" alt="">
+		</div>
+		<div id="copyright" class="footer-copyright text-center py-3 p-2">&copy; 2019
+			Copyright:
+			<a class="text-muted" href=""> Guadalupe Gárriz</a>
+			<p>
+			<a class="mailTo" href="mailto:contacto@guadagarriz.com">
+				Email: contacto@guadagarriz.com</a></p>
+		</div>
+		<!-- Copyright -->
+			<br>
+			<br>
+			<br>
+		</div>
 
-					<a class="text-muted" href=""> Guadalupe Gárriz</a>
-
-
-					<small>
-						<div class="d-flex p-2 justify-content-between flex-wrap">
-							<div class="col-md-12 col-sm-12 text-left p-2">
-								<p class="text-center">Las obras reproducidas en esta página se
-									encuentran protegidas
-									por la Ley 11.723, Régimen
-									Legal de la Propiedad Intelectual de la República Argentina. Por lo
-									tanto, su uso se
-									encuentra restringido a aquello que la autora de las mismas determine y
-									no pueden
-									ser
-									reproducidas sin su consentimiento.. </p>
-							</div>
-						</div>
-					</small>
-
-				</div>
-				<!-- Copyright -->
-				<br>
-				<br>
-				<br>
-			</div>
-
-		</footer>
+	</footer>
 
 
 

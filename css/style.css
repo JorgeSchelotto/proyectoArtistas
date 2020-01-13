@@ -362,3 +362,27 @@ h2 {
 #acercaDe {
   margin-bottom: 0.8em;
 }
+
+.mailTo {
+  color: #666;
+}
+
+.mailTo:hover {
+  color: #ad8614;
+}
+
+.mailTo::selection {
+  color: #ad8614;
+}
+
+.callToAction {
+  color: #666;
+  padding: 0em;
+  margin: 0em;
+}
+
+.callToAction {
+  color: #ffffff !important;
+  padding: 0em;
+  margin: 0em;
+}

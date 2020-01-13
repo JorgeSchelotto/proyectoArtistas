@@ -23,9 +23,9 @@
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex
 				justify-content-center">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="assets/imagenes/navbar/avatar.png" alt="Logo" style="width:30px;">
-				</a>
+					<a class="navbar-brand" href="index.html">
+							<img src="assets/imagenes/navbar/avatar.png" alt="Logo" style="width:30px;">
+						  </a>
 
 				<a class="navbar-brand" href="index.html"><b id="tittle"> Guada Gárriz </b></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -51,7 +51,7 @@
 								<a class="dropdown-item" href="html/pintura.html">Pintura</a>
 								<a class="dropdown-item" href="html/ilustracion.html">Ilustración</a>
 								<a class="dropdown-item" href="html/taller.html">Taller</a>
-								<a class="dropdown-item" href="html/Exhibiciones.html">Exhibiciones</a>
+								<!---<a class="dropdown-item" href="html/Exhibiciones.html">Exhibiciones</a>--->
 								<a class="dropdown-item" href="academicos.html">Escritos academicos</a>
 							</div>
 						</li>
@@ -66,8 +66,8 @@
 						</li>
 					</ul>
 					<form class="form-inline my-2 my-lg-0">
-						<button class="btn btn-outline-light my-2 my-sm-0" disabled type="button">Tienda
-							<small>(Próximamente)</small></button>
+						<a class="callToAction" disabled>Tienda
+							<small>(Próximamente)</small></a>
 					</form>
 				</div>
 			</div>
@@ -115,12 +115,7 @@
 
 			<br>
 			<br>
-			<br>
-			<br>
-			<br>
-			<div class="dotText">
-				<h3>Escritos realizados junto a Joaquín Areta</h3>
-			</div>
+
 			<br>
 			<br>
 
@@ -165,8 +160,7 @@
 			<br>
 			<br>
 			<div class="dotText">
-				<h3>Escritos resultados de trabajos de participación colectiva en
-					investigación en artes</h3>
+				<h3>Escritos resultados de investigación en artes</h3>
 			</div>
 			<br>
 			<br>
@@ -231,18 +225,15 @@
 						</div>
 					</div>
 					<!-- Contact Form-->
-					<form id="contact-form" name="contact-form" action="https://formspree.io/jasfotografo@hotmail.com"
-						method="POST">
+					<form id="contact-form" name="contact-form" action="https://formspree.io/jasfotografo@hotmail.com" method="POST">
 						<div class="form-row">
 							<div class="form-group col-md-6 col-12-mobile">
 								<label for="nombre">Nombres</label>
-								<input type="text" class="form-control" id="name" name="name" placeholder="Nombres"
-									required>
+								<input type="text" class="form-control" id="name" name="name" placeholder="Nombres" required>
 							</div>
 							<div class="form-group col-md-6 col-12-mobile">
 								<label for="email">Email</label>
-								<input type="text" class="form-control" id="email" name="email" placeholder="Email"
-									required>
+								<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
 							</div>
 						</div>
 						<div class="form-row">
@@ -268,13 +259,13 @@
 			<!-- Call to action -->
 			<ul class="list-unstyled list-inline text-center py-2">
 				<li class="list-inline-item">
-					<h5 class="mb-1">Tienda</h5>
+					<p class="callToAction"> <small> Tienda </small> </p>
 				</li>
 				<li class="list-inline-item">
-					<a href="#!" class="btn btn-outline-light my-2 my-sm-0 disabled">Sign up!</a>
+					<h6 href="#!" class="my-2 my-sm-0 disabled" placeholder="Tienda en desarrollo">Sign up!</h6>
 				</li>
-				<li>
-					<small>Próximamente</small>
+				<li> 
+					<p class="callToAction"> <small> Próximamente </small> </p>
 				</li>
 			</ul>
 			<!-- Call to action -->
@@ -293,15 +284,14 @@
 						<i class="fab fa-twitter"> </i>
 					</a>
 				</li>
-
+	
 				<li class="list-inline-item">
 					<a href="https://www.instagram.com/guadagarriz.arte/" class="btn-floating btn-li mx-1">
 						<i class="fab fa-instagram"> </i>
 					</a>
 				</li>
 				<li class="list-inline-item">
-					<a href="https://www.linkedin.com/in/guadalupe-g%C3%A1rriz-arte/"
-						class="btn-floating btn-dribbble mx-1">
+					<a href="https://www.linkedin.com/in/guadalupe-g%C3%A1rriz-arte/" class="btn-floating btn-dribbble mx-1">
 						<i class="fab fa-linkedin"> </i>
 					</a>
 				</li>
@@ -310,18 +300,21 @@
 
 			<!-- Copyright -->
 			<div class="d-flex align-items-center flex-column align-content-center flex-wrap">
-				<div class="p-2" id="logoFooter">
-					<img class="img-fluid" src="assets/imagenes/index/footer-logo.png" alt="">
-				</div>
-				<div id="copyright" class="footer-copyright text-center py-3 p-2">&copy; 2019
-					Copyright:
-					<a class="text-muted" href=""> Guadalupe Gárriz</a>
-				</div>
-				<!-- Copyright -->
-				<br>
-				<br>
-				<br>
+			<div class="p-2" id="logoFooter">
+				<img class="img-fluid" src="assets/imagenes/index/footer-logo.png" alt="">
 			</div>
+			<div id="copyright" class="footer-copyright text-center py-3 p-2">&copy; 2019
+				Copyright:
+				<a class="text-muted" href=""> Guadalupe Gárriz</a>
+				<p>
+				<a class="mailTo" href="mailto:contacto@guadagarriz.com">
+					Email: contacto@guadagarriz.com</a></p>
+			</div>
+			<!-- Copyright -->
+			<br>
+			<br>
+			<br>
+		</div>
 
 	</footer>
 
