@@ -1,4 +1,4 @@
-# preoyectoArtistas: webpage for artists who want to sell his/her works.
+# proyectoArtistas: webpage for artists who want to sell his/her works.
 
 Step 1: Design and implementation of the webpage (we are here).
 
