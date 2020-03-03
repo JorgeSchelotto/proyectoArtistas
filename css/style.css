@@ -1,5 +1,5 @@
-@import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+
 * {
   font-family: "Source Sans Pro", "Roboto", Arial, Helvetica, sans-serif;
   border: none;
@@ -385,4 +385,9 @@ h2 {
   color: #ffffff !important;
   padding: 0em;
   margin: 0em;
+}
+
+#logo{
+  display:block;
+margin:auto;
 }
